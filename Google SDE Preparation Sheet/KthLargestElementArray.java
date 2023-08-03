@@ -25,12 +25,13 @@ class Solution {
         int i = 0;
         int j = k-1;
         while(i < j) {
-            x[i] = x[i] ^ x[j];
-            x[j] = x[i] ^ x[j];
-            x[i] = x[i] ^ x[j];
+            x[i] = x[i]^x[j];
+            x[j] = x[i]^x[j];
+            x[i] = x[i]^x[j];
             i++;
             j--;
         }
         return x;
     }
+    
 }
